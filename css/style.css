@@ -7,7 +7,7 @@
 }
 body {
   font-family: 'IBM Plex Mono', Arial, Helvetica, sans-serif;
-  margin: 5% 20%;
+  margin: 5% 10%;
 }
 
 .card {
@@ -44,4 +44,76 @@ nav a:hover {
 
 b {
   color: var(--dark-blue);
+}
+
+.page-header {
+  width: 50%;
+  padding: 30px;
+  border-radius: 10px;
+  color: var(--dark-blue);
+}
+
+.page-header a {
+  color: var(--blue);
+}
+
+.two-column {
+  display: flex;
+  flex-wrap: wrap;border: 1px 0px solid #CCC;
+  border-top: 1px solid #CCC;
+}
+
+.two-column-child:nth-child(1) {
+  width: 300px;
+  padding: 10px;
+  border-right: 1px solid #CCC;
+  
+}
+
+.two-column-child:nth-child(2) {
+  width: 600px;
+  padding: 40px;
+}
+
+.row-card {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row-card-child {
+  padding: 15px;
+  margin: 10px;
+  width: 250px;
+  border: 1px solid #CCC;
+  border-radius: 5px;
+}
+
+.row-card-child .color {
+  
+}
+
+@media screen and (max-width: 1300px) {
+  .two-column {
+    width: 100%;
+  }
+
+  .two-column-child:nth-child(1) {
+  width: 100%;
+  padding: 10px;
+  border-right: 0px;
+  border-bottom: 1px solid #CCC;
+}
+
+.two-column-child:nth-child(2) {
+  width: 100%;
+  padding: 10px
+}
+
+}
+
+@media screen and (max-width: 900px) {
+  .row-card-child {
+  width: 100%;
+}
 }
