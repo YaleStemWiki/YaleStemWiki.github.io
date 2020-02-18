@@ -4,10 +4,22 @@
   --blue: #3282b8;
   --dark-blue: #0f4c75;
   --dark: #1b262c;
+  --text-clip: url(https://generative-placeholders.glitch.me/image?style=triangles&width=100&height=100&colors=96);
 }
+
 body {
-  font-family: 'IBM Plex Mono', Arial, Helvetica, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 14pt;
   margin: 5% 10%;
+}
+
+/** h1, h2, h3, h4 {
+  font-family: 'IBM Plex Mono', Arial, Helvetica, sans-serif;
+} **/
+
+.centered {
+  display: block;
+  margin: auto;
 }
 
 .card {
@@ -24,6 +36,10 @@ a:hover {
   border-bottom: 1px solid var(--blue);
   color: var(--blue);
   transition: 0.2s;
+}
+
+a .disabled {
+  background-color: gray;
 }
 
 nav {
@@ -59,7 +75,8 @@ b {
 
 .two-column {
   display: flex;
-  flex-wrap: wrap;border: 1px 0px solid #CCC;
+  flex-wrap: wrap;
+  border: 1px 0px solid #CCC;
   border-top: 1px solid #CCC;
 }
 
@@ -67,11 +84,10 @@ b {
   width: 300px;
   padding: 10px;
   border-right: 1px solid #CCC;
-  
 }
 
 .two-column-child:nth-child(2) {
-  width: 600px;
+  width: 700px;
   padding: 40px;
 }
 
@@ -79,41 +95,72 @@ b {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  margin: 10px;
 }
 
 .row-card-child {
-  padding: 15px;
+  padding: 20px;
   margin: 10px;
   width: 250px;
   border: 1px solid #CCC;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
-.row-card-child .color {
-  
+.row-card-child h3 {
+  padding: 10px;
+  border-bottom: 1px solid #CCC;
+}
+
+.row-card-child-dipped {
+  padding: 0px;
+  width: 250px;
+  border: 1px solid #CCC;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.row-card-child-dipped-header {
+  background-color: var(--blue);
+  padding: 10px;
+  color: white;
+}
+
+.row-card-child-dipped-header h3 {
+  margin: 30px 10px 10px 10px;
+}
+
+.row-card-child-dipped-content {
+  padding: 20px;
+}
+
+.clipped {
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-image: var(--text-clip);
+  color: var(--dark-blue);
 }
 
 @media screen and (max-width: 1300px) {
   .two-column {
     width: 100%;
   }
-
   .two-column-child:nth-child(1) {
-  width: 100%;
-  padding: 10px;
-  border-right: 0px;
-  border-bottom: 1px solid #CCC;
-}
-
-.two-column-child:nth-child(2) {
-  width: 100%;
-  padding: 10px
-}
-
+    width: 100%;
+    padding: 10px;
+    border-right: 0px;
+    border-bottom: 1px solid #CCC;
+  }
+  .two-column-child:nth-child(2) {
+    width: 100%;
+    padding: 10px
+  }
 }
 
 @media screen and (max-width: 900px) {
   .row-card-child {
-  width: 100%;
-}
+    width: 100%;
+  }
+  .row-card-child-dipped {
+    width: 100%;
+  }
 }
