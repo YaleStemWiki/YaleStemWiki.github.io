@@ -1,0 +1,36 @@
+extends ./layout.jade
+block content
+  .card Majors are grouped by department or you can select an introductory course.
+  .two-column
+    .two-column-child
+      h2
+        | Directory
+      ul
+        li
+          a(href='#') Introductory Courses
+    .two-column-child
+      h3 Natural Sciences
+      nav
+        a(href='./major_physics.html') Physics
+        a(href='#') Biology
+        a(href='#') Chemistry
+      br
+      h3 Applied Sciences
+      nav
+        a(href='#') Comp. Sci
+        a(href='#') Environ. Eng.
+        a(href='#') Mech. Eng.
+      h3 Introductory Courses
+      ul
+        li
+          a(href='#') MATH 112
+        li
+          a(href='#') MATH 115
+        li
+          a(href='#') MATH 120
+        li
+          a(href='#') MATH 222/225
+        li
+          a(href='#') PHYS 170/171
+        li
+          a(href='#') PHYS 180/181
