@@ -1,0 +1,28 @@
+extends ./layout.jade
+block content
+  .two-column
+    .two-column-child
+      h3 Directory
+      ul
+        li
+          a(href="#physics") Physics
+        li
+          a(href="#") Biology
+        li
+          a(href="#") Chemistry
+        li
+          a(href="#") Computer Science
+        li
+          a(href="#") Mathematics
+    .two-column-child
+      h3(id="physics") Physics
+      .row-card
+        .row-card-child-dipped
+          .row-card-child-dipped-header Sally
+          .row-card-child-dipped-content Boop
+        .row-card-child-dipped
+          .row-card-child-dipped-header Bob
+          .row-card-child-dipped-content Thing
+        .row-card-child-dipped
+          .row-card-child-dipped-header Andy
+          .row-card-child-dipped-content Beep
