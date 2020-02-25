@@ -1,0 +1,1 @@
+jade ./templates -o ./ -w
