@@ -113,6 +113,7 @@ b {
 
 .row-card-child-dipped {
   padding: 0px;
+  margin: 10px;
   width: 250px;
   border: 1px solid #CCC;
   border-radius: 10px;
@@ -127,6 +128,14 @@ b {
 
 .row-card-child-dipped-header h3 {
   margin: 30px 10px 10px 10px;
+}
+
+.row-card-child-dipped-header a {
+  color: white;
+}
+
+.row-card-child-dipped-header a:hover {
+  border-bottom: 1px solid white;
 }
 
 .row-card-child-dipped-content {

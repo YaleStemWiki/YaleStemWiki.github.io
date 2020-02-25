@@ -1,2 +1,2 @@
 #!/bin/sh
-jade ./templates --out ./
+jade ./templates --out ./ --watch
