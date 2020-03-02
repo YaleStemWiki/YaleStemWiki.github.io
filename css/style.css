@@ -143,9 +143,15 @@ b {
 }
 
 .clipped {
+  /**
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-image: var(--text-clip);
+  **/
+  background: -webkit-linear-gradient(45deg, #534aff, #3abd87 80%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   color: var(--dark-blue);
 }
 
