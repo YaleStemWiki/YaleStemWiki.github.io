@@ -6,6 +6,12 @@ html(lang='en')
     link(rel='icon' type='image/png' href='./favicon.ico' sizes='16x16')
     title Yale STEM Wiki
     link(rel='stylesheet' href='./css/style.css')
+    script(async='', src='https://www.googletagmanager.com/gtag/js?id=UA-159580756-1')
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-159580756-1');
   body
     h1
       a.clipped(href='./index.html') Yale STEM Wiki

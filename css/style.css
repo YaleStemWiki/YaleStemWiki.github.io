@@ -155,7 +155,7 @@ b {
   color: var(--dark-blue);
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1400px) {
   .two-column {
     width: 100%;
   }
