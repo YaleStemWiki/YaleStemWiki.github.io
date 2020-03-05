@@ -1,1 +1,1 @@
-jade ./templates -o ./ -w
+jade ./templates -o ./ -w --pretty

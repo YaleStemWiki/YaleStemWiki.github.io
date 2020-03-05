@@ -1,4 +1,12 @@
 extends ./layout.jade
+
+mixin person(name, image, desc, email)
+  .row-card-child
+      img.centered(width='200px', height='auto', src=image)
+      h3= name
+      p= desc
+      a(href=email) Email
+
 block content
   .two-column
     .two-column-child
@@ -17,12 +25,4 @@ block content
     .two-column-child
       h3(id="physics") Physics
       .row-card
-        .row-card-child-dipped
-          .row-card-child-dipped-header Sally
-          .row-card-child-dipped-content Boop
-        .row-card-child-dipped
-          .row-card-child-dipped-header Bob
-          .row-card-child-dipped-content Thing
-        .row-card-child-dipped
-          .row-card-child-dipped-header Andy
-          .row-card-child-dipped-content Beep
+        +person("NAME", "./urm_faculty/FILENAME", "DESCRIPTION", "mailto:EMAIL")

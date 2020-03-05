@@ -155,6 +155,14 @@ b {
   color: var(--dark-blue);
 }
 
+.citations {
+  font-size: 11pt;
+  color: rgb(93, 93, 93);
+  width: 100%;
+  border-top: 1px solid rgb(93, 93, 93);
+  padding: 10px;
+}
+
 @media screen and (max-width: 1400px) {
   .two-column {
     width: 100%;
