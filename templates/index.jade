@@ -1,33 +1,22 @@
 extends ./layout.jade
+
+mixin profile(name, image, description, email)
+  .row-card-child(style="width: 450px;")
+      img(width='150px', height='auto', src=image)
+      .right
+        h3= name
+        p= description
+        a(href=email) Email
+
 block content
   .card
     | The Yale STEM Wiki was made by undergraduate students to enhance the accessibility of
     | STEM resources for all kinds Yalies from premeds, URMs, FGLI students, and more.
-  h3 Who we are?
+  h3 Who are we?
   .row-card
-    .row-card-child
-      img.centered(width='250px', height='auto', src='./img/headshot-min.jpg')
-      h3 Jay Baptista
-      |         Class of 2023
-      br
-      a(href="mailto:jay.baptista@yale.edu") Email
-    .row-card-child
-      img.centered(width='250px', height='auto', src='./img/IMG_0753 (1).jpg')
-      h3 Jaida Morgan
-      |         Class of 2023
-      br
-      a(href="mailto:jaida.morgan@yale.edu") Email
-    .row-card-child
-      img.centered(width='250px', height='auto', src='./img/mimipic.jpg')
-      h3 Mimi Kostoska
-      |         Class of 2021
-      br
-      a(href="mailto:mimi.kostoska@yale.edu") Email
-    .row-card-child
-      img.centered(width='250px', height='auto', src='./img/unnamed.jpg')
-      h3 Michael Najem
-      |         Class of 2020
-      br
-      a(href="mailto:michael.najem@yale.edu") Email
+    +profile("Jay Baptista 2023", "./img/headshot-min.jpg", "Jay is a potential astrophysics major who lives in Ezra Stiles College.  He calls Maui home, and he hopes to attend graduate school in the future and pursue a career in academia." ,"mailto:jay.baptista@yale.edu")
+    +profile("Jaida Morgan 2023", "./img/IMG_0753 (1).jpg", "Jaida is a potential molecular, cellular, & developmental major who lives in Ezra Stiles College.  She comes from Southern California and plans on attending graduate school after Yale to pursue a career in cancer research." ,"mailto:jaida.morgan@yale.edu")
+    +profile("Mimi Kostoska 2021", "./img/mimipic.jpg", "Class of 2021" ,"mailto:mimi.kostoska@yale.edu")
+    +profile("Michael Najem 2020", "./img/unnamed.jpg", "Class of 2020" ,"mailto:michael.najem@yale.edu")
   nav
     a(href='#') Contact Us
