@@ -2,16 +2,17 @@ extends ./layout.jade
 
 mixin profile(name, image, description, email)
   .row-card-child(style="width: 450px;")
-      img(src=image)
-      .right
+      .head
+        img(src=image)
         h3= name
+      .right
         p= description
         a(href=email) Email
 
 block content
   .card
     | The Yale STEM Wiki was made by undergraduate students to enhance the accessibility of
-    | STEM resources for all kinds Yalies from premeds, URMs, FGLI students, and more.
+    | STEM resources for all kinds of Yalies from premeds, URMs, FGLI students, and more.
   h3 Who are we?
   .row-card
     +profile("Jay Baptista 2023", "./img/headshot-min.jpg", "Jay is a potential astrophysics major who lives in Ezra Stiles College.  He calls Maui home, and he hopes to attend graduate school in the future and pursue a career in academia." ,"mailto:jay.baptista@yale.edu")

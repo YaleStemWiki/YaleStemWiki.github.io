@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
 :root {
-  --light-blue: #bbe1fa;
-  --blue: #3282b8;
-  --dark-blue: #0f4c75;
+  --orange: #ffa34d;
+  --red: #f67575;
+  --teal: #1eb2a6;
   --dark: #1b262c;
   --text-clip: url(https://generative-placeholders.glitch.me/image?style=triangles&width=100&height=100&colors=96);
 }
@@ -17,6 +17,12 @@ h1, h2, h3, h4 {
   font-family: 'Karla', Arial, Helvetica, sans-serif;
 }
 
+h4 {
+  color: var(--orange);
+  border-bottom: 1px solid var(--orange);
+  padding: 10px;
+}
+
 .centered {
   display: block;
   margin: auto;
@@ -29,12 +35,12 @@ h1, h2, h3, h4 {
 
 a {
   text-decoration: none;
-  color: var(--dark-blue);
+  color: var(--teal);
 }
 
 a:hover {
-  border-bottom: 1px solid var(--blue);
-  color: var(--blue);
+  border-bottom: 1px solid var(--red);
+  color: var(--red);
   transition: 0.2s;
 }
 
@@ -55,22 +61,22 @@ nav a {
 }
 
 nav a:hover {
-  border: 1px solid var(--blue);
+  border: 1px solid var(--red);
 }
 
 b {
-  color: var(--dark-blue);
+  color: var(--teal);
 }
 
 .page-header {
   width: 50%;
   padding: 30px;
   border-radius: 10px;
-  color: var(--dark-blue);
+  color: var(--teal);
 }
 
 .page-header a {
-  color: var(--blue);
+  color: var(--red);
 }
 
 .two-column {
@@ -111,9 +117,17 @@ b {
 .row-card-child img {
   margin: 20px;
   align-self: center;
-  height: 250px;
+  height: 100px;
   width: auto;
   border-radius: 10px;
+}
+
+.row-card-child .head {
+  background-color: var(--teal);
+  width: 100%;
+  display: flex;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .row-card-child .right {
@@ -122,21 +136,23 @@ b {
 }
 
 .row-card-child h3 {
-  padding: 10px;
-  border-bottom: 1px solid #CCC;
+  width: 300px;
+  padding: 10px 20px;
+  color: white;
+  margin: auto 10px;
 }
 
 .row-card-child-dipped {
   padding: 0px;
   margin: 10px;
-  width: 250px;
+  width: 300px;
   border: 1px solid #CCC;
   border-radius: 10px;
   overflow: hidden;
 }
 
 .row-card-child-dipped-header {
-  background-color: var(--blue);
+  background-color: var(--red);
   padding: 10px;
   font-size: 24px;
   color: white;
@@ -164,11 +180,11 @@ b {
   -webkit-background-clip: text;
   background-image: var(--text-clip);
   **/
-  background: -webkit-linear-gradient(45deg, #534aff, #3abd87 80%);
+  background: -webkit-linear-gradient(45deg, #f67575, #ffa34d 80%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  color: var(--dark-blue);
+  color: var(--teal);
 }
 
 .citations {
@@ -205,6 +221,9 @@ b {
   .row-card-child {
     display: block;
   }
+  .row-card-child .head {
+    display: block;
+  }
   .row-card-child a {
     font-size: 14pt;
     font-weight: bold;
@@ -212,6 +231,8 @@ b {
   .row-card-child h3 {
     font-size: 24px;
     font-weight: bold;
+    display: block;
+    padding: 30px;
   }
   .row-card-child img {
     margin: 0 auto;

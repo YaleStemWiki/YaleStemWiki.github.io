@@ -2,9 +2,10 @@ extends ./layout.jade
 
 mixin person(name, image, desc, email)
   .row-card-child
-      img(width='100px', height='auto', src=image)
-      .right
+      .head
+        img(src=image)
         h3= name
+      .right
         p= desc
         a(href=email) Email
 
