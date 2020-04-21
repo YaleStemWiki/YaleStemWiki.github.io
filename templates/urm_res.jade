@@ -1,28 +1,21 @@
 extends ./layout.jade
 block content
-  h2 URM Resources
-  .two-column
-    .two-column-child
-      h3 Directory
-      ul
-        li
-          a(href="#") List Item
-    .two-column-child
-      // Copy paste me!
-      .row-card
-        .row-card-child-dipped
-          .row-card-child-dipped-header
-            h3
-              a(href="./urm_prof.html") URM Professors
-          .row-card-child-dipped-content
-            | Click on the link above to see faculty 
-            | that are under-represented minorities, and the 
-            | departments and research fields they work in.
-        .row-card-child-dipped
-          .row-card-child-dipped-header
-            h3
-              a(href="./imposter.html") Imposter Syndrome?
-          .row-card-child-dipped-content
-            | URMs, especially here at Yale, can be most likely to be susceptible 
-            | to Imposter Syndrome. Learn more and how to deal with imposterism on the link above.      
+  .fat-header.clipped URM Resources
+  // Copy paste me!
+  .row-card
+    .row-card-child-dipped
+      .row-card-child-dipped-header
+        h3
+          a(href="./urm_prof.html") URM Professors
+      .row-card-child-dipped-content
+        p Click on the link above to see faculty 
+        | that are under-represented minorities, and the 
+        | departments and research fields they work in.
+    .row-card-child-dipped
+      .row-card-child-dipped-header-black
+        h3
+          a(href="./imposter.html") Imposter Syndrome?
+      .row-card-child-dipped-content
+        p URMs, especially here at Yale, can be most likely to be susceptible 
+        | to Imposter Syndrome. Learn more and how to deal with imposterism on the link above.      
       

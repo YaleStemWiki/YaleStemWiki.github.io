@@ -31,6 +31,8 @@ h4 {
 .card {
   padding: 20px;
   font-size: 14pt;
+  border-bottom: 1px solid var(--red);
+  margin: 20px auto;
 }
 
 a {
@@ -102,6 +104,7 @@ b {
   display: flex;
   flex-wrap: wrap;
   margin: 10px;
+  justify-content: center;
 }
 
 .row-card-child {
@@ -112,6 +115,7 @@ b {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
+  flex-direction: column;
 }
 
 .row-card-child img {
@@ -149,6 +153,7 @@ b {
   border: 1px solid #CCC;
   border-radius: 10px;
   overflow: hidden;
+  align-self: flex-start;
 }
 
 .row-card-child-dipped-header {
@@ -158,7 +163,28 @@ b {
   color: white;
 }
 
-.row-card-child-dipped-header h3 {
+.row-card-child-dipped-header-blue {
+  background-color: var(--teal);
+  padding: 10px;
+  font-size: 24px;
+  color: white;
+}
+
+.row-card-child-dipped-header-orange {
+  background-color: var(--orange);
+  padding: 10px;
+  font-size: 24px;
+  color: white;
+}
+
+.row-card-child-dipped-header-black {
+  background-color: var(--dark);
+  padding: 10px;
+  font-size: 24px;
+  color: white;
+}
+
+.row-card h3 {
   margin: 30px 10px 10px 10px;
 }
 
@@ -193,6 +219,38 @@ b {
   width: 100%;
   border-top: 1px solid rgb(93, 93, 93);
   padding: 10px;
+}
+
+.fat-header {
+  font-family: 'Helvetica';
+  font-size: 72px;
+  font-weight: bold;
+  text-align: center;
+  margin: 30px auto;
+}
+
+.fat-header-2 {
+  font-family: 'Helvetica';
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  margin: 30px auto;
+}
+
+.fat-header-3 {
+  font-family: 'Helvetica';
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+  margin: 30px auto;
+}
+
+.fat-header-tiny-desc {
+  text-align: center;
+  font-size: 21px;
+  color: #111;
+  margin: 10px auto;
+  font-weight: 400;
 }
 
 @media screen and (max-width: 1400px) {
