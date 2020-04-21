@@ -13,7 +13,34 @@ block content
   .card
     | The Yale STEM Wiki was made by undergraduate students to enhance the accessibility of
     | STEM resources for all kinds of Yalies from premeds, URMs, FGLI students, and more.
-  h3 Who are we?
+  .card
+    .fat-header.clipped What's new?
+    .row-card
+      .row-card-child-dipped
+        .row-card-child-dipped-header-black
+          h3 Work In Progress
+        .row-card-child-dipped-content
+          p The team is actively trying to keep this wiki up-to-date! That being said, this project is an on-going effort and is still a work in progress. If you want to help out or give us any tips, feel free to contact us!
+          a(href="#team") Contact
+      .row-card-child-dipped
+        .row-card-child-dipped-header-blue
+          h3 STEM Survey Report
+        .row-card-child-dipped-content
+          p The Yale College Student Advisory Committee on Science and Quantitative Reasoning and the Yale College Council conducted a study to determine why not as many students initially interested in STEM degrees chose to follow through on earning a STEM degree.  The results are summarized in the report below, as well as recommendations for the overall improvement of STEM at Yale.  Please see Dean Chang's website for more information, available under the "Research" tab.
+          a(href="./media/stemreport.pdf") View Report Here
+      .row-card-child-dipped
+        .row-card-child-dipped-header
+          h3 Dean Chang's STEM Guide
+        .row-card-child-dipped-content
+          p This guide was provided by Dean Sandy Chang to help STEM students write emails, choose classes, and more.  It contains useful information for premed students as well.  Also look at his website, linked under the "Research" tab.
+          a(href="./media/deanchangguide.pdf") View Guide Here
+      .row-card-child-dipped
+        .row-card-child-dipped-header-black
+          h3 2020 Senior Advice
+        .row-card-child-dipped-content
+          p Crowd-sourced advice for STEM students, by STEM students. These URM STEM student perspectives have a voice to share.
+          a(href="./senior_quotes.html") See Senior Advice
+  .fat-header-2.clipped#team Meet the Team.
   .row-card
     +profile("Jay Baptista 2023", "./img/headshot-min.jpg", "Jay is a potential astrophysics major who lives in Ezra Stiles College.  He calls Maui home, and he hopes to attend graduate school in the future and pursue a career in academia." ,"mailto:jay.baptista@yale.edu")
     +profile("Jaida Morgan 2023", "./img/IMG_0753 (1).jpg", "Jaida is a potential molecular, cellular, & developmental biology major who lives in Ezra Stiles College.  She comes from Southern California and plans on attending graduate school after Yale to pursue a career in cancer research." ,"mailto:jaida.morgan@yale.edu")
@@ -21,17 +48,4 @@ block content
     +profile("Michael Najem 2020", "./img/unnamed.jpg", "Michael is an MB&B major who lives in Timothy Dwight College.  He will be attending medical school next year and plans to pursue a career at the intersection of medicine and health policy", "mailto:michael.najem@yale.edu")
   nav
     a(href='#') Contact Us
-    .row-card
-      .row-card-child-dipped(width="500px")
-        .row-card-child-dipped-header
-          h3 STEM Survey Report
-        .row-card-child-dipped-content
-          p The Yale College Student Advisory Committee on Science and Quantitative Reasoning and the Yale College Council conducted a study to determine why not as many students initially interested in STEM degrees chose to follow through on earning a STEM degree.  The results are summarized in the report below, as well as recommendations for the overall improvement of STEM at Yale.  Please see Dean Chang's website for more information, available under the "Research" tab.
-          a(href="./media/stemreport.pdf") View Report Here
-              .row-card
-      .row-card-child-dipped(width="500px")
-        .row-card-child-dipped-header
-          h3 Dean Chang's STEM Guide
-        .row-card-child-dipped-content
-          p This guide was provided by Dean Sandy Chang to help STEM students write emails, choose classes, and more.  It contains useful information for premed students as well.  Also look at his website, linked under the "Research" tab.
-          a(href="./media/deanchangguide.pdf") View Guide Here
+  
