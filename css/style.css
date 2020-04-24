@@ -124,14 +124,27 @@ b {
   height: 100px;
   width: auto;
   border-radius: 10px;
+  box-shadow: 3px 3px white;
 }
 
 .row-card-child .head {
-  background-color: var(--teal);
+  background: -webkit-linear-gradient(45deg, #f67575, #ffa34d 80%);
   width: 100%;
   display: flex;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+}
+
+.row-card-child .head h3 {
+  text-shadow: 2px 2px var(--red);
+}
+
+.row-card-child .head h3 p {
+  font-weight: lighter;
+  padding: 10px;
+  width: 80%;
+  border-top: 1px solid white;
+  text-transform: uppercase;
 }
 
 .row-card-child .right {
@@ -141,9 +154,9 @@ b {
 
 .row-card-child h3 {
   width: 300px;
-  padding: 10px 20px;
   color: white;
-  margin: auto 10px;
+  margin: auto;
+  padding: 20px 0;
 }
 
 .row-card-child-dipped {
@@ -283,7 +296,7 @@ b {
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 945px) {
   .row-card-child {
     width: 100%;
   }
