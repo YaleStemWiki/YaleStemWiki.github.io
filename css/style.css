@@ -184,6 +184,20 @@ b {
   color: white;
 }
 
+.row-card-child-dipped-header-img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(90%) hue-rotate(330deg);
+  padding: 10px;
+  font-size: 24px;
+  color: white;
+  height: 200px;
+}
+
+.highlight {
+  background: var(--orange);
+}
+
 .row-card h3 {
   margin: 30px 10px 10px 10px;
 }
