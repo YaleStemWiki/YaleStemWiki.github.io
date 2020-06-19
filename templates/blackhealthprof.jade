@@ -1,8 +1,5 @@
-extends ./layout.jade
-block content
-
-mixin person(name, image, desc, email)
-  .row-card-child
+mixin person(name, image, desc, email, id)
+  .row-card-child(id=id)
       .head
         img(src=image)
         h3= name
@@ -10,4 +7,14 @@ mixin person(name, image, desc, email)
         p= desc
         a(href=email) Email
 
-      +person("Anjelica Gonzalez", "img/urm_faculty/anjelicag.png", "Anjelica has a dedicated interest in training the next generation of scientists to think interdisciplinary and approach problems form a scientifically global perspective.  With a multi-disciplinary approach, the Gonzalez lab combines organic chemistry, molecular biology, mathematics, computational modeling and image analysis to develop and use biomedically engineering scaffolds to dissect the chemo-mechanics of immunological processes.  This work has special significance to an array of diseases and disorders, including atherosclerosis, arthritis, diabetes, cutaneous T-cell lymphoma, and sepsis.(Source: Faculty Page)", "mailto:anjelica.gonzalez@yale.edu")   
+extends ./layout.jade
+block content
+
+  .two-column
+      .two-column-child
+        h3 Directory
+        ul
+          li
+            a(href="#gonzales") Anjelica Gonzales
+      .two-column-child
+        +person("Anjelica Gonzalez", "img/urm_faculty/anjelicag.png", "Anjelica has a dedicated interest in training the next generation of scientists to think interdisciplinary and approach problems form a scientifically global perspective.  With a multi-disciplinary approach, the Gonzalez lab combines organic chemistry, molecular biology, mathematics, computational modeling and image analysis to develop and use biomedically engineering scaffolds to dissect the chemo-mechanics of immunological processes.  This work has special significance to an array of diseases and disorders, including atherosclerosis, arthritis, diabetes, cutaneous T-cell lymphoma, and sepsis.(Source: Faculty Page)", "mailto:anjelica.gonzalez@yale.edu", 'gonzales')
